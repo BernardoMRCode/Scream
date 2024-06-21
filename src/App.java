@@ -2,30 +2,27 @@ public class Main {
     public static void main(String[] args) {
     
         Produtora produtora1 = new Produtora(1, "EA Sports", 1991);
-        Produtora produtora2 = new Produtora(2, "Rockstar Games", 1998);
-        Produtora produtora3 = new Produtora(3, "Ubisoft", 1986);
-        Produtora produtora4 = new Produtora(4, "Nintendo", 1889);
-        Produtora produtora5 = new Produtora(5, "Square Enix", 1975);
-
         Produtora.criarProdutora(produtora1);
+        Produtora produtora2 = new Produtora(2, "Rockstar Games", 1998);
         Produtora.criarProdutora(produtora2);
+        Produtora produtora3 = new Produtora(3, "Ubisoft", 1986);
         Produtora.criarProdutora(produtora3);
+        Produtora produtora4 = new Produtora(4, "Nintendo", 1889);
         Produtora.criarProdutora(produtora4);
+        Produtora produtora5 = new Produtora(5, "Square Enix", 1975);
         Produtora.criarProdutora(produtora5);
 
-       
-        Jogo jogo1 = new Jogo(101, "PlayStation", "Ação", 59.99, "Jogo de aventura emocionante", "1.0", produtora1);
-        Jogo jogo2 = new Jogo(102, "Xbox", "RPG", 49.99, "Mundo aberto com missões épicas", "2.5", produtora2);
-        Jogo jogo3 = new Jogo(103, "PC", "Estratégia", 29.99, "Construa seu império", "3.2", produtora3);
-        Jogo jogo4 = new Jogo(104, "Nintendo Switch", "Plataforma", 39.99, "Salve a princesa!", "1.8", produtora4);
-        Jogo jogo5 = new Jogo(105, "PlayStation", "Esportes", 19.99, "Partidas de futebol emocionantes", "4.0", produtora5);
-
-      
-        Jogo.criarJogo(jogo1);
-        Jogo.criarJogo(jogo2);
-        Jogo.criarJogo(jogo3);
-        Jogo.criarJogo(jogo4);
-        Jogo.criarJogo(jogo5);
+        Jogo fifa2024 = new Jogo(101, "FIFA 2024", "PlayStation 5", 59.99, "Esportes", "Simulador de futebol","1.0", produtora1);
+        Jogo.criarJogo(fifa2024);
+        Jogo gtaV = new Jogo(201, "Grand Theft Auto V", "PC", 29.99, "Ação e Aventura", "Mundo aberto de crime","1.5", produtora2);
+        Jogo.criarJogo(gtaV);
+        Jogo acValhalla = new Jogo(301, "Assassin's Creed Valhalla", "Xbox Series X", 49.99, "Ação e Aventura","Exploração viking na Inglaterra medieval", "2.0", produtora3);
+        Jogo.criarJogo(acValhalla);
+        Jogo marioOdyssey = new Jogo(401, "Super Mario Odyssey", "Nintendo Switch", 39.99, "Plataforma","Aventuras do Mario pelo mundo", "1.2", produtora4);
+        Jogo.criarJogo(marioOdyssey);
+        Jogo ffVII = new Jogo(501, "Final Fantasy VII Remake", "PlayStation 4", 49.99, "RPG", "Reimaginação épica", "1.1", produtora5);
+        Jogo.criarJogo(ffVII);
+        
 
     
 
