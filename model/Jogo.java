@@ -3,19 +3,21 @@ import java.util.List;
 
 class Jogo {
     private int id;
+    private String nome;
     private String plataforma;
-    private String genero;
     private double valor;
+    private String genero;
     private String descricao;
     private String versao;
     private Produtora produtora;
-
-    public Jogo(int id, String plataforma, String genero, double valor, String descricao, String versao,
+    
+    public Jogo(int id, String nome, String plataforma, double valor, String genero, String descricao, String versao,
             Produtora produtora) {
         this.id = id;
+        this.nome = nome;
         this.plataforma = plataforma;
-        this.genero = genero;
         this.valor = valor;
+        this.genero = genero;
         this.descricao = descricao;
         this.versao = versao;
         this.produtora = produtora;
@@ -29,6 +31,14 @@ class Jogo {
         this.id = id;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String getPlataforma() {
         return plataforma;
     }
@@ -37,20 +47,20 @@ class Jogo {
         this.plataforma = plataforma;
     }
 
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
     public double getValor() {
         return valor;
     }
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
     public String getDescricao() {
@@ -77,9 +87,8 @@ class Jogo {
         this.produtora = produtora;
     }
 
-   
-
-   public static List<Jogo> jogos = new ArrayList<>();
+    
+    public static List<Jogo> jogos = new ArrayList<>();
 
 
     public static void criarJogo(Jogo jogo) {
@@ -96,8 +105,6 @@ class Jogo {
         return null;
     }
 
-
-
     public static void atualizarJogo(Jogo jogo) {
         for (int i = 0; i < jogos.size(); i++) {
             if (jogos.get(i).id == jogo.id) {
@@ -112,5 +119,6 @@ class Jogo {
     public static void deletarJogo(int id) {
         jogos.removeIf(jogo -> jogo.id == id);
     }
-}
+   
     
+}
