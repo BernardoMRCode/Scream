@@ -31,4 +31,5 @@ public class Cliente extends Usuario {
         setEmail(email);
         System.out.println("Perfil atualizado com sucesso!");
     }
+    
 }
